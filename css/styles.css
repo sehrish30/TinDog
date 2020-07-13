@@ -1,0 +1,240 @@
+:root {
+    --main-color: #f4f4f4;
+    --primary-color: #f0a500;
+    --secondary-color: #cf7500;
+    --btn-color: #000000;
+    --normal-color: #212529;
+    --highlight-font: 'Ubuntu', sans-serif;
+    --main-font: 'Montaga', serif;
+}
+
+#title {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(to bottom right, var(--secondary-color), var(--primary-color));
+    text-align: left;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--highlight-font);
+}
+
+h1 {
+
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.feature-title {
+    font-size: 1.6rem;
+}
+
+
+
+p {
+    color: var(--primary-color);
+    opacity: 0.9;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+.fab {
+    padding-right: 5px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: var(--highlight-font);
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    color: var(--main-color);
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+}
+
+
+.nav-link:hover {
+    border: none;
+    border-bottom: 4px ridge var(--normal-color);
+    border-radius: 5rem;
+    color: var(--normal-color);
+}
+
+/* Download button */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
+/* Title Image */
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    right: 30%;
+    position: absolute;
+}
+
+#features {
+    padding: 7% 15%;
+    background-color: var(--main-color);
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+
+    padding: 5%;
+}
+
+.icon {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: var(--secondary-color);
+}
+
+.fa-bars {
+    color: var(--main-color)
+}
+
+/* Testimonial Section */
+
+#testimonials {
+    background-color: var(--primary-color);
+    color: var(--main-color);
+}
+
+.testimonial-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.dog {
+    width: 10%;
+    height: 8rem;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+#press {
+    background-color: var(--primary-color);
+
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 10%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+    padding: 100px;
+}
+
+.pricing-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+
+}
+
+.headc {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(to bottom right, var(--secondary-color), var(--primary-color));
+}
+
+.black {
+    color: var(--normal-color);
+}
+
+/* CTA section */
+#cta {
+    background-color: var(--normal-color);
+    color: var(--primary-color);
+    padding: 7% 15%;
+}
+
+#cta h3 {
+    font-size: 3rem;
+    font-family: var(--highlight-font);
+    line-height: 1.5;
+}
+
+/* 
+ Footer Section */
+
+#footer {
+    padding: 7% 15%;
+
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+/* Media Queries */
+
+@media(max-width: 1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    .testimonial-heading,
+    h2.pricing-heading {
+        font-size: 1.5rem;
+    }
+
+    .dog {
+        height: 4rem;
+    }
+
+    #cta h3 {
+        font-size: 2rem;
+    }
+}
